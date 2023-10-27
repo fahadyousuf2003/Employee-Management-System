@@ -35,16 +35,6 @@ class child:public emp
 	void intro()
 	{
 		system("cls");
-		cout<<"\n\n\n\n\n";
-		cout<<"\t\t\t==============================";
-		cout<<"\n\t\t\t==============================";
-		cout<<"\n\n\t\t\t\tMy Best Friend";
-		cout<<"\n\n\n\t\t\t 1. Allah Pak";
-		cout<<"\n\n\t\t\t 2. Hazrat Muhammad (S.A.W)";
-		cout<<"\n\n\t\t\t==============================";
-		cout<<"\n\t\t\t==============================";
-		getch();
-		system("cls");
 		cout<<"\n\n\n\n\n\n\n";
 		cout<<"\t\t\t==============================";
 		cout<<"\n\t\t\t==============================";
@@ -54,21 +44,6 @@ class child:public emp
 		cout<<"\n\t\t\t==============================";
 		getch();
 		system("cls");
-		cout<<"\n\n\n";
-		cout<<"\t\t\t====================================";
-		cout<<"\n\t\t\t====================================";
-		cout<<"\n\n\t\t\t\t    Introduction";
-		cout<<"\n\n\t\t\t====================================";
-		cout<<"\n\t\t\t====================================";
-		cout<<"\n\n\t\t\t Name :		Hafiz Khizar Shahal";
-		cout<<"\n\t\t\t Class :	BS IT (Hons.)";
-		cout<<"\n\t\t\t Section :	Afternoon A";
-		cout<<"\n\t\t\t Roll No. :	BT-8888888";
-		cout<<"\n\t\t\t Teacher :	Mr. Zeeshan Arshad Butt";
-		cout<<"\n\t\t\t Institute :	Punjab University";
-		cout<<"\n\n\t\t\t====================================";
-		cout<<"\n\t\t\t====================================";
-		getch();
 	}
 	void child::login()
 	{
@@ -83,30 +58,30 @@ class child:public emp
 		cout<<"\n\n\n Enter User Name : ";
 		cin>>user;
 		cout<<"\n\n Enter Password : ";
-		for(int i=1;i<=6;i++)
+		for(int i=1;i<=5;i++)
 		{
 			ch = getch();
 			pass += ch;
 			cout<<"*";
 		}
-		if(user == "khizarshahal2@gmail.com" && pass == "khizar")
+		if(user == "fahadyousuf344@gmail.com" && pass == "fahad")
 		{
 			cout<<"\n\n\n\t\t\tCongratulation Login Successfully...";
 			cout<<"\n\n\n\t\t\t\t\tLoading";
-			for(int i=1;i<=6;i++)
+			for(int i=1;i<=5;i++)
 			{
 				Sleep(500);
 				cout<<".";
 			}
 			emp::menu();
 		}
-		else if(user != "khizarshahal2@gmail.com" && pass == "khizar")
+		else if(user != "fahadyousuf344@gmail.com" && pass == "fahad")
 		{
 			cout<<"\n\n\n Your User Name is Wrong....";
 			getch();
 			goto p;
 		}
-		else if(user == "khizarshahal2@gmail.com" && pass != "khizar")
+		else if(user == "fahadyousuf344@gmail.com" && pass != "fahad")
 		{
 			cout<<"\n\n\n Your Password is Wrong....";
 			getch();
